@@ -1,0 +1,145 @@
+.webuploader-element-invisible{
+  position: absolute;
+  opacity: 0.01;
+  z-index: -999;
+}
+.webuploader-pick + div{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.material__upload-wrap{
+}
+
+.material__wrap-scroll{
+
+  max-height: 360px;
+  min-height: 240px;
+  overflow: hidden;
+  overflow-y: visible;
+  padding-right: 5px;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  &::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;
+  }
+}
+
+.material__upload-wrap-table{
+  height: 240px;
+  display: table;
+  width: 100%;
+}
+.material__upload-wrap-cell{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.material__upload-btn{
+  background: #E9E9E9;
+  color: #333;
+  font-size: 12px;
+  position: relative;
+  width: 125px;
+  cursor: pointer;
+  user-select: none;
+  display: block;
+  text-align: center;
+  line-height: 32px;
+  transition: all .5s;
+}
+.material__upload{
+  display: inline-block;
+}
+
+.editor__tools-tips-wrap {
+  &.material__hover-look-error{
+    max-width: 130px;
+    padding: 5px 10px;
+    line-height: 17px;
+    height: auto;
+    box-sizing: border-box;
+    text-align: left;
+    min-width: 90px;
+  }
+}
+
+.material__wrap{
+  @height:110px;
+  @width:@height;
+
+  display: none;
+  &.show{
+    + .material__upload-wrap-table{
+      display: none;
+    }
+    display: block;
+    margin-top: 15px;
+  }
+
+}
+
+//大图阅览
+.material__hover-look-larg{
+  position: fixed;
+  box-shadow: 0 5px 20px 0 rgba(0,0,0,0.50);
+  display: none;
+  z-index: 11;
+  background-color: #e6e6e6;
+
+  .material__hover-img{
+    height: 100%;
+    display: block;
+    margin: auto;
+  }
+  .material__hover-close{
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    cursor: pointer;
+    display: none;
+  }
+  .material__img-title{
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
+    height: 24px;
+    overflow: hidden;
+  }
+  &:hover{
+    .material__hover-close{
+      display: block;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
